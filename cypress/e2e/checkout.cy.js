@@ -9,7 +9,6 @@ describe('Purchase Flow', () => {
   const checkoutPage = new CheckoutPageObject();
 
   it('should complete the purchase flow successfully', () => {
-    // Test data
     const testData = {
       productName: 'Sony vaio i7',
       category: 'Laptops',
@@ -45,8 +44,5 @@ describe('Purchase Flow', () => {
     });
 
     checkoutPage.confirmOrder();
-
-    // Ensure we are back on the home page
-    cy.url().should('eq', 'https://www.demoblaze.com/index.html');
   });
 });

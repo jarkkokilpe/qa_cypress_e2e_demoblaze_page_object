@@ -45,3 +45,4 @@ class CheckoutPageObject {
 }
 
 export default CheckoutPageObject;
+//
